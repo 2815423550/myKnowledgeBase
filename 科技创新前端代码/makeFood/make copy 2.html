@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>制作模块</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="./js/vue.js"></script>
+
+    <style>
+
+		.picture{
+            width: 150px;height: 150px;position: absolute;left: 0px;top: 0px;
+        }
+ 
+
+      .dragover {
+        border: 8px dashed #ffae00;
+      }
+
+    </style>
+
+</head>
+<body style="background: url(./img/cool-background.png);">
+
+    <div class="all" style="margin: auto;width: 1200px;height: 100px;background-color: aquamarine;">
+
+        <div class="nav" style=" width:1200px;height: 100px;background-color: brown;">
+    
+                    <div class="back" style="float: left;margin-left: 20px;margin-top: 25px;">
+                        <a href="/cardChoose/index2.html">
+                            <img src="./img/撤销.png" draggable="false" alt="返回" style="width: 50px; height: 50px;">
+                        </a>
+                    </div>
+    
+                    <div class="treasure" style="float: right;">
+                        <div class="gold" style="display: inline;margin-right: 100px;">
+                            <span style="text-align:center;line-height:100px">
+                            金币：99
+                            </span>
+                        </div>
+                        <div class="shine-tone" style="display: inline;margin-right: 70px;">
+                            <span style="text-align:center;">
+                                砖石：99
+                                </span>
+                        </div>
+                        <div class="player-level" style="display: inline;margin-right: 100px;">
+                            <a style="text-align:center;" href="../aboutMe/my.html">
+                                玩家等级：99
+                            </a>
+                        </div>
+                    </div>
+        </div>
+    
+        <div class="content" style="width: 1200px;height: 1200px;background-color: bisque;">
+
+                <!-- 材料图片区域 -->
+               <div id="left" class="left" style="display: block;">
+                
+                <div style="position: absolute;">
+                    <img src="./img/小麦.jpg" class="picture" id="pic1" draggable='true' style="border-style: solid;
+
+                    border-width: 0px;
+                    
+                    border-color: #000;">
+                </div>
+                <div style="position: absolute;margin-left: 200px;">
+                    <img src="./img/冰糖.jpg" class="picture" id="pic2" draggable='true'>
+                </div>
+                <div style="position: absolute;margin-left: 200px;margin-top: 200px;">
+                    <img src="./img/肉.jpg" class="picture" id="pic3" draggable='true'>
+                </div>
+                <div style="position: absolute;margin-left: 200px;margin-top: 400px;">
+                    <img src="./img/黑芝麻.jpg" class="picture" id="pic4" draggable='true'>
+                </div>
+                <div style="position: absolute;display: inline;margin-top: 400px;">
+                    <img src="./img/白菜.jpg" class="picture" id="pic5" draggable='true'>
+                </div>
+                <div style="position: absolute;margin-top: 200px;">
+                    <img src="./img/糯米.jpg" class="picture" id="pic6" draggable='true'>
+                </div>
+            </div>
+    
+    
+            <!-- 制作区域 -->
+            <div class="right" id="right" style="width: 770px;height: 600px;
+                border: 8px dashed #00d9ff;position: relative;display: grid;place-items: center;
+                margin-left: 400px;">
+
+                <button style="width:100px;height:100px;margin-top: 200px;" id="button">
+                  烹饪
+                </button>
+    
+                <div class="wrapper" style="display: none;" id="card">
+                    <div class="book" id="book1">
+                    <div class="book__cover">
+                      <div class="header-image"><div class="overlay"></div></div>
+                      <div class="title-wrap">
+                        <h1 class="article-title">磁器口陈麻花</h1>
+                      </div>
+                      <p class="book__cover-exerpt">
+                        起源：20世纪30年代合川人陈景洪在磁器口叫卖麻花，后由其子陈昌银继承家业，2016年6月入选重庆非遗食品
+                        口味：咸甜
+                        制作工艺:河南小麦，甘蔗糖，颗粒饱满的黑芝麻，香而不腻的核桃油，糯米，冰糖麻花胚，和面—压胚子—切五寸细条条—手工搓麻花纹路—打结麻花—把握火候油炸，
+                        闻起来香，咬起来脆，酥脆化渣
+ <br><br>
+                        <span class="social">
+                         <i class="fa fa-facebook"></i>
+                         <i class="fa fa-twitter"></i>
+                         <i class="fa fa-linkedin"></i>
+                         <i class="fa fa-instagram"></i>
+                        </span>
+                    
+                      </p>
+                    
+                    </div>
+                      <div class="book__content">
+                        <p><span class="drop-cap">又名：</span>陈银昌麻花</p>
+                        <p>	起源：20世纪30年代合川人陈景洪在磁器口叫卖麻花，后由其子陈昌银继承家业，2016年6月入选重庆非遗食品
+                        </p>
+                        <p>口味：咸甜</p>
+                        <p>制作工艺:河南小麦，甘蔗糖，颗粒饱满的黑芝麻，香而不腻的核桃油，糯米，冰糖麻花胚，和面—压胚子—切五寸细条条—手工搓麻花纹路—打结麻花—把握火候油炸，
+                          闻起来香，咬起来脆，酥脆化渣</p>
+                          <br><br><br>
+                      </div>
+                    </div>
+                   
+                  </div>
+
+
+                  <div class="wrapper2" style="display: none;" id="card2">
+                    <div class="book2">
+                    <div class="book__cover">
+                      <div class="header-image2"><div class="overlay"></div></div>
+                      <div class="title-wrap">
+                        <h1 class="article-title">江西冻米糖</h1>
+                      </div>
+                      <p class="book__cover-exerpt">
+                        选果：（八到九成熟的果子）色彩均匀 无疤痕
+制作工艺：漂洗—削外皮（使不含苦涩味，保证成型）
+—划瓣挤涩水（口感好，色泽也好，去酸留甜）—漂洗挤干—加糖煮耙蜜饯（边煮边加糖）—冷却风干—撒糖衣—包装
+
+ <br><br>
+                        <span class="social">
+                         <i class="fa fa-facebook"></i>
+                         <i class="fa fa-twitter"></i>
+                         <i class="fa fa-linkedin"></i>
+                         <i class="fa fa-instagram"></i>
+                        </span>
+                    
+                      </p>
+                    
+                    </div>
+                      <div class="book__content">
+                        <p><span class="drop-cap">俗称：</span>江南小切</p>
+                        <p>	 选果：（八到九成熟的果子）色彩均匀 无疤痕
+                        </p>
+                        <p>口味：香甜</p>
+                        <p>制作工艺：漂洗—削外皮（使不含苦涩味，保证成型）
+                          —划瓣挤涩水（口感好，色泽也好，去酸留甜）—漂洗挤干—加糖煮耙蜜饯（边煮边加糖）—冷却风干—撒糖衣—包装</p>
+                          <br><br><br>
+                      </div>
+                    </div>
+                   
+                  </div>
+
+            </div>   
+        </div>
+
+    </div>
+      
+</body>
+
+<!-- 鼠标点击图片样式提示 -->
+<script>
+  let picture1 = document.getElementById('pic1')
+  let pic1=1
+  picture1.addEventListener('click',function(){
+    pic1++
+    if(pic1%2==0){
+    picture1.style.border='10px solid black'
+    pic1=false
+    }else{
+    picture1.style.border='0px solid black'
+    }
+  })
+
+  let picture2 = document.getElementById('pic2')
+  let pic2=1
+  picture2.addEventListener('click',function(){
+    pic2++
+    if(pic2%2==0){
+    picture2.style.border='10px solid black'
+    pic2=false
+    }else{
+    picture2.style.border='0px solid black'
+    }
+  })
+
+  let picture3 = document.getElementById('pic3')
+  picture3.addEventListener('click',function(){
+    picture3.style.border='10px solid black'
+  })
+
+  let picture4 = document.getElementById('pic4')
+  picture4.addEventListener('click',function(){
+    picture4.style.border='10px solid black'
+  })
+
+  let picture5 = document.getElementById('pic5')
+  picture5.addEventListener('click',function(){
+    picture5.style.border='10px solid black'
+  })
+
+  let picture6 = document.getElementById('pic6')
+  picture6.addEventListener('click',function(){
+
+    picture6.style.border='10px solid black'
+  })
+
+          let header__login = this.document.querySelector('.right')
+          let login = this.document.getElementById('card')
+          let login2 = this.document.getElementById('card2')
+          let button=document.getElementById("button")
+    
+          let sum = 0;
+          header__login.addEventListener('click', function () {
+              console.log("点击了")
+              if(sum==0){
+                login.style.display = 'block'
+                button.style.display='none'
+              }else if(sum==2){
+                login.style.display = 'none'
+                button.style.display='block'
+                picture1.style.border='0px solid black'
+                picture2.style.border='0px solid black'
+                picture3.style.border='0px solid black'
+                picture4.style.border='0px solid black'
+                picture5.style.border='0px solid black'
+                picture6.style.border='0px solid black'
+
+              }else if(sum==3){
+                login2.style.display = 'block'
+                button.style.display='none'
+
+              }else if(sum==5){
+                login2.style.display = 'none'
+                button.style.display='block'
+                picture1.style.border='0px solid black'
+                picture2.style.border='0px solid black'
+                picture3.style.border='0px solid black'
+                picture4.style.border='0px solid black'
+                picture5.style.border='0px solid black'
+                picture6.style.border='0px solid black'
+              }
+              sum++;
+          })
+      </script>
+    
+      <!-- 图片放大 -->
+      <script>
+          "use strict";
+          $('.book').on('click', function () {
+              $(this).toggleClass('book--expanded');
+          });   
+
+
+          "use strict";
+          $('.book2').on('click', function () {
+              $(this).toggleClass('book--expanded');
+          });  
+      </script>
+
+
+
+</html>

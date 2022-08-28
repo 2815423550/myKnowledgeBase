@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>制作模块</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="./js/vue.js"></script>
+
+    <style>
+
+		.picture{
+            width: 150px;height: 150px;position: absolute;left: 0px;top: 0px;
+        }
+ 
+
+      .dragover {
+        border: 8px dashed #ffae00;
+      }
+
+    </style>
+
+</head>
+<body style="background: url(./img/cool-background.png);">
+
+    <div class="all" style="margin: auto;width: 1200px;height: 100px;background-color: aquamarine;">
+
+        <div class="nav" style=" width:1200px;height: 100px;background-color: brown;">
+    
+                    <div class="back" style="float: left;margin-left: 20px;margin-top: 25px;">
+                        <a href="/cardChoose/index2.html">
+                            <img src="./img/撤销.png" draggable="false" alt="返回" style="width: 50px; height: 50px;">
+                        </a>
+                    </div>
+    
+                    <div class="treasure" style="float: right;">
+                        <div class="gold" style="display: inline;margin-right: 100px;">
+                            <span style="text-align:center;line-height:100px">
+                            金币：99
+                            </span>
+                        </div>
+                        <div class="shine-tone" style="display: inline;margin-right: 70px;">
+                            <span style="text-align:center;">
+                                砖石：99
+                                </span>
+                        </div>
+                        <div class="player-level" style="display: inline;margin-right: 100px;">
+                            <a style="text-align:center;" href="../aboutMe/my.html">
+                                玩家等级：99
+                            </a>
+                        </div>
+                    </div>
+        </div>
+    
+        <div class="content" style="width: 1200px;height: 1200px;background-color: bisque;">
+
+                <!-- 材料图片区域 -->
+               <div id="left" class="left" style="display: block;">
+                
+                <div style="position: absolute;">
+                    <img src="./img/btn.png" class="picture" id="pic1" draggable='true'>
+                </div>
+                <div style="position: absolute;margin-left: 200px;">
+                    <img src="./img/白菜（小）.jpg" class="picture" id="pic2" draggable='true'>
+                </div>
+                <div style="position: absolute;margin-left: 200px;margin-top: 200px;">
+                    <img src="./img/肉.jpg" class="picture" id="pic3" draggable='true'>
+                </div>
+                <div style="position: absolute;margin-left: 200px;margin-top: 400px;">
+                    <img src="./img/虾.jpg" class="picture" id="pic4" draggable='true'>
+                </div>
+                <div style="position: absolute;display: inline;margin-top: 400px;">
+                    <img src="./img/白菜.jpg" class="picture" id="pic5" draggable='true'>
+                </div>
+                <div style="position: absolute;margin-top: 200px;">
+                    <img src="./img/btn.png" class="picture" id="pic6" draggable='true'>
+                </div>
+            </div>
+    
+    
+            <!-- 制作区域 -->
+            <div class="right" id="right" style="width: 770px;height: 600px;
+                border: 8px dashed #00d9ff;position: relative;display: grid;place-items: center;
+                margin-left: 400px;">
+    
+                <div class="wrapper" style="display: none;" id="card">
+                    <div class="book">
+                    <div class="book__cover">
+                      <div class="header-image"><div class="overlay"></div></div>
+                      <div class="title-wrap">
+                        <h1 class="article-title">金丝虾球</h1>
+                      </div>
+                      <p class="book__cover-exerpt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae accusamus,
+                        numquam nihil dicta illum, atque deserunt quas quasi nulla, fugiat ipsum voluptas
+                        vel laudantium autem. Tempora veniam labore error dolores facere, nostrum suscipit 
+                        modi, necessitatibus nulla sequi, neque quidem vero. <br><br>
+                        <span class="social">
+                         <i class="fa fa-facebook"></i>
+                         <i class="fa fa-twitter"></i>
+                         <i class="fa fa-linkedin"></i>
+                         <i class="fa fa-instagram"></i>
+                        </span>
+                    
+                      </p>
+                    
+                    </div>
+                      <div class="book__content">
+                        <p><span class="drop-cap">O</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias est incidunt odit ea adipisci animi nihil voluptates iure beatae explicabo asperiores enim ex placeat itaque minus error temporibus voluptate corporis suscipit commodi voluptatibus praesentium molestiae, perspiciatis nulla. Accusantium harum nisi maiores, velit perferendis, nesciunt ad, porro sequi aliquid maxime molestias!</p>
+                        <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nobis fuga delectus tempore. Odio ipsa voluptate ex nobis ratione consequatur dignissimos dolorum culpa, ipsam sit dolorem itaque excepturi, natus sed deleniti incidunt ipsum asperiores! Molestiae cumque quam nulla, nam inventore. Necessitatibus blanditiis cumque laboriosam, id, ad unde quo ipsum nulla.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum accusantium velit expedita, minima sapiente unde magnam dicta. Consequuntur cumque numquam sed deserunt, quidem officia illo blanditiis ipsum, commodi distinctio quam molestias dolore, doloremque corporis? Rem ad recusandae delectus accusamus, harum quisquam perferendis dolor aut consectetur nesciunt atque laborum ab dolores.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, neque, magnam. Impedit deleniti ad alias, unde vero quis mollitia, tenetur minima porro, officia iusto quae harum labore nostrum aliquid aut maxime, architecto in reprehenderit. Doloribus pariatur quam fuga sed modi veniam, vel corporis magnam quis eius cumque voluptate, dolore repellendus labore nobis, voluptatibus dicta sapiente doloremque! Enim dicta totam debitis cumque similique, natus, consequatur quidem cum incidunt, sint quos. Ea.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptatum possimus dolores nesciunt natus quaerat quas quo quam obcaecati ducimus totam quia sint, et nobis nisi tenetur id aspernatur quibusdam molestiae reprehenderit sed incidunt. Voluptas error necessitatibus sed inventore, quasi facilis, est. Asperiores atque laboriosam inventore quis eos nulla. Fuga neque odit maiores facilis voluptas nemo numquam, eos amet molestias.</p>
+                      </div>
+                    </div>
+                   
+                  </div>
+            </div>   
+        </div>
+
+    </div>
+      
+</body>
+        <!-- 模拟制作成功 -->
+        <script>
+          let header__login = this.document.querySelector('.right')
+          // let picture = this.document.querySelector('.picture')
+          // let pic1 = this.document.getElementById('pic1')
+          // let pic2 = this.document.getElementById('pic2')
+          // let pic3 = this.document.getElementById('pic3')
+          // let pic4 = this.document.getElementById('pic4')
+          // let pic5 = this.document.getElementById('pic5')
+          // let pic6 = this.document.getElementById('pic6')
+
+          let login = this.document.getElementById('card')
+    
+          let sum = 0;
+          header__login.addEventListener('click', function () {
+              // login.style.display = 'block'
+              console.log("点击了")
+              sum++;
+              if (sum == 3) {
+                  login.style.display = 'block'
+                  // pic1.style.display='none'
+                  // pic2.style.display='none'
+                  // pic3.style.display='none'
+                  // pic4.style.display='none'
+                  // pic5.style.display='none'
+                  // pic6.style.display='none'
+              }
+              // 模拟关闭简介
+              if(sum==5){
+                  login.style.display = 'none'
+                  
+              }
+          })
+      </script>
+    
+      <!-- 图片放大 -->
+      <script>
+          "use strict";
+          $('.book').on('click', function () {
+              $(this).toggleClass('book--expanded');
+          });   
+      </script>
+
+
+<script>
+  const left = document.getElementById("left");
+  const right = document.getElementById("right");
+
+  left.addEventListener("dragstart", handleDragStart);
+  right.addEventListener("dragover", handleDragover);
+  right.addEventListener("dragleave", handleDragLeave);
+  right.addEventListener("drop", handleDrop);
+
+  function handleDragStart(e) {
+    e.dataTransfer.setData("text/plain", e.target.id);
+    // 有 copy、move、和 auto 三种，分别是把鼠标指针
+    // 显示为复制样式（带+号）、移动样式，或自动设置样式
+    // e.dataTransfer.dropEffect = "move";
+  }
+
+  function handleDragover(e) {
+    e.preventDefault();
+    right.classList.add("dragover");
+    // e.dataTransfer.dropEffect = "move";
+  }
+
+  function handleDragLeave(e) {
+    right.classList.remove("dragover");
+  }
+
+  function handleDrop(e) {
+    e.preventDefault();
+    // 如果是文件
+    [...e.dataTransfer.items].forEach((item) => {
+      if (item.kind === "file") {
+        const file = item.getAsFile();
+        createPreview(file);
+      }
+    });
+
+    // 如果是元素
+    // const draggedId = e.dataTransfer.getData("text/plain");
+    // droppable.appendChild(document.getElementById(draggedId));
+    // droppable.classList.add("dropped");
+  }
+
+  function createPreview(imageFile) {
+    if (!imageFile.type.startsWith("image/")) {
+      return;
+    }
+
+    const image = document.createElement("img");
+    image.src = URL.createObjectURL(imageFile);
+    image.onload = function () {
+      URL.revokeObjectURL(this.src);
+    };
+    right.appendChild(image);
+  }
+</script>
+
+</html>

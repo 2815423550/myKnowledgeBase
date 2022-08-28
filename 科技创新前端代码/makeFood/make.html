@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
+    .zong{
+      margin: auto;width: 1200px;height: 700px;background-color: aquamarine
+    }
+
+    .shang{
+      width:1200px;height: 100px;background-color: brown;
+    }
+
+    .xia{
+      width: 1200px;height: 600px;background: rgb(21, 20, 20);
+      /* position: relative; */
+    }
+
+    .left{
+      width: 500px;height: 600px;background: rgb(180, 209, 35);
+      position: absolute;
+    }
+
+    .right{
+      width: 700px;height: 600px;background: rgb(32, 154, 178);
+      margin-left: 500px;
+      /* position: absolute; */
+    }
+  </style>
+</head>
+<body>
+  <div class="zong">
+
+    <div class="shang">
+      <div class="back" style="float: left;margin-left: 20px;margin-top: 25px;">
+        <a href="/cardChoose/index2.html">
+            <img src="./img/撤销.png" draggable="false" alt="返回" style="width: 50px; height: 50px;">
+        </a>
+    </div>
+
+    <div class="treasure" style="float: right;">
+        <div class="gold" style="display: inline;margin-right: 100px;">
+            <span style="text-align:center;line-height:100px">
+            金币：99
+            </span>
+        </div>
+        <div class="shine-tone" style="display: inline;margin-right: 70px;">
+            <span style="text-align:center;">
+                砖石：99
+                </span>
+        </div>
+        <div class="player-level" style="display: inline;margin-right: 100px;">
+            <a style="text-align:center;" href="../aboutMe/my.html">
+                玩家等级：99
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <div class="xia">
+
+      <div class="left">
+        <div style="display: inline;padding: 10px;"><img src="./img/home.png" class="png" width="100px"></div>
+        <div style="display: inline;padding: 10px;"><img src="./img/home.png" class="png" width="100px"></div>
+        <div style="display: inline;padding: 10px;"><img src="./img/home.png" class="png" width="100px"></div>
+        <div style="display: inline;padding: 10px;"><img src="./img/home.png" class="png" width="100px"></div>
+        <div style="display: inline;padding: 10px;"><img src="./img/home.png" class="png" width="100px"></div>
+        <div style="display: inline;padding: 10px;"><img src="./img/home.png" class="png" width="100px"></div>
+      </div>
+
+      <div class="right">
+        <button>烹饪</button>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+<script>
+  var png= document.getElementsByClassName("png")
+  
+</script>
+</html>
