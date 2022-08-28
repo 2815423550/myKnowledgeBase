@@ -1,0 +1,58 @@
+首先去全局pom导入<dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2.2.5.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+然后去你要使用nacos的注册服务的pom里添加 <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+第三步，去到配置文件里添加
+spring:
+  cloud:
+    nacos:
+      server-addr: localhost:8848   #配置nacos端口
+      discovery:
+        cluster-name: HZ # 集群名称 HZ杭州
+
+以上就完成了在nacos注册服务了
+
+#####################################################
+
+然后到在nacos配置服务
+
+首先先到你要使用nacos的配置服务的pom里导入依赖<!--nacos配置管理依赖-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+然后到配置文件里创建一个bootstrap.yaml文件，并输入
+spring:
+  application:
+    name: userservice # 服务名称
+  profiles:
+    active: dev #开发环境，这里是dev
+  cloud:
+    nacos:
+      server-addr: localhost:8848 # Nacos地址
+      config:
+        file-extension: yaml # 文件后缀名
+
+如果你想配置nacos配置文件属性的热更新，你就得去config包里添加一个....这里我也不懂
+
+      
+#####################################################
+微服务间的远程调用
+
+首先，去到你的服务的pom里添加
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-openfeign</artifactId>
+</dependency>
+
+第二步，去到你的启动类上面添加@EnableFeignClients
