@@ -1,0 +1,113 @@
+.banner {
+    width: 960px;
+    height: 260px;
+    margin: 80px;
+    opacity: 0.8;   
+    background: url(/image/logo.png) no-repeat;
+    /* 阴影值 */
+    box-shadow: 10px 15px 15px 1px black;
+    position: relative;     
+    /* 子绝父相 */
+}
+
+body{
+    background: url("/image/音乐背景.jpg") no-repeat;
+    background-size: cover;
+    /* 自适应，使得该图片填充整个body背景 */
+}
+
+.banner ul li {
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+}
+
+.banner ul li img {
+    border-radius: 50%;
+    /* 图片变圆 */
+
+    cursor: pointer;
+    /* 鼠标移到上面变手势 */
+}
+
+.m1{top: 30px;left: 90px;}
+.m2{top: 140px;left: 160px;}
+.m3{top: 67px;left: 308px;}
+.m4{top: 50px;left: 500px;}
+.m5{top: 160px;left: 580px;}
+
+@keyframes img_rotate{
+    from {transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+.banner .img_rotate{
+    animation: img_rotate 2s infinite linear;
+}
+
+.music{
+    width: 515px;
+    height: 105px;
+    background: black;
+    position: fixed;
+    left: 0;
+    bottom: 50px;
+    opacity: 0.8;
+    box-shadow: 10px 15px 15px 1px black;
+}
+
+.music .m_img{
+    margin-top: 15px;
+    margin-left: 10px;
+    float: left;
+    /* 因为div是块级元素，所以加一个左浮动会使得他们从左开始横着排 */
+}
+
+.music .m_text{
+    float: left;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 20px;
+
+}
+
+.music .m_btn{
+    float: left;
+    /* 防止歌名过长把歌曲名挤掉 */
+    position: absolute;
+    left: 320px;
+}
+
+.music .m_btn a{
+    float: left;
+    width: 35px;height: 35px;
+    background: url("../image/main/播放器.jpg");
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.music .m_btn .m_prev{background-position: -70px 0px;}
+.music .m_btn .m_prev:hover{background-position: -70px -32px;}
+.music .m_btn .m_play{background-position: -104px -5px;}
+.music .m_btn .m_play:hover{background-position: -104px -46px;}
+
+.music .m_btn .m_next{background-position: -145px 0px;}
+.music .m_btn .m_next:hover{background-position: -145px -32px;}
+
+.music .m_close{
+    float: right;
+    background: url("../image/main/播放器.jpg");
+    width: 21px;
+    height: 108px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.music .m_btn .m_pause{background-position: -292px -93px;}
+.music .m_btn .m_pause:hover{background-position: -334px -93px;}
+
+.music .m_open{
+    background-position: -45px 0px;
+}

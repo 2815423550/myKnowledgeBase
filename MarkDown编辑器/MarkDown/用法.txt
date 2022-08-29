@@ -1,0 +1,33 @@
+直接把上一级的MarkDown包引入，引入之后把example包删掉，
+
+在你想要引入的文件里引入editormd.css和editormd.js 除此之外还需要引入jquery-3.4.1.min.js，
+
+然后在你的文件里面添加：
+<script>
+	//初始化Markdown编辑器
+    var contentEditor;
+    $(function() {
+      // xxx是你最外层的div的id值
+      contentEditor = editormd("xxx", {
+        width   : "100%",	//这个值根据你的需求调
+        height  : 640,
+        syncScrolling : "single",
+        path    : "你引入的Markdown文件的lib文件的地址"
+      });
+    });
+</script>
+
+关于xxx，例如：
+<div id="xxx" style="z-index: 1 !important;">  
+	     [TOC]
+
+#### Disabled options
+
+- TeX (Based on KaTeX);
+- Emoji;
+- Task lists;
+- HTML tags decode;
+- Flowchart and Sequence Diagram;
+
+</div>
+		这个div便是你想要添加编辑器的区域

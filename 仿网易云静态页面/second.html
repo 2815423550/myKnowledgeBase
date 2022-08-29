@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/second.css">
+</head>
+
+<body>
+    <div class="banner">  
+        <!-- /* no-repeat 使得该图片不重复，不平铺之类的 */ -->
+        <ul>
+            <li datasrc="mp3/1.mp3" class="m1" title="11-22"><img src="./image/logo.ico" alt="xx-xx" width="65"></li>
+            <li datasrc="mp3/2.mp3" class="m2" title="22-33"><img src="./image/logo.ico" alt="11-22" width="90"></li>
+            <li datasrc="mp3/3.mp3" class="m3" title="33-44"><img src="./image/logo.ico" alt="33-44" width="119"></li>
+            <li datasrc="mp3/4.mp3" class="m4" title="44-55"><img src="./image/logo.ico" alt="44-55" width="90"></li>
+            <li datasrc="mp3/5.mp3" class="m5" title="55-66"><img src="./image/logo.ico" alt="55-66" width="65"></li>
+        </ul>
+    </div>
+
+    <div class="music">
+        <div class="m_img">
+            <img src="./image/logo.ico" width="90" alt="">
+        </div>
+        <div class="m_text">Lorem ipsum</div>
+        <div class="m_btn">
+            <a href="#" class="m_prev" title="上一首"></a>
+            <a href="#" class="m_play" title="播放"></a>
+            <a href="#" class="m_next" title="下一首"></a>
+        </div>
+        <div class="m_close "></div>
+        <!-- class可以有多个，直接空格 -->
+        <audio src="mp3/1.mp3" class="m_mp3"></audio>
+    </div>
+    
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/second.js"></script>
+</body>
+
+</html>

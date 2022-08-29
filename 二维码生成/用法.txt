@@ -1,0 +1,12 @@
+引入两个中任意的其中一个js
+
+然后添加script：
+//这里的qrcode是你要生成二维码的容器的id值
+var qrcode = new QRCode("qrcode", {
+      text: "http://jindo.dev.naver.com/collie",
+      width: 110,	//这里可以调整二维码的大小
+      height: 110,
+      colorDark : "#000000",
+      colorLight : "#ffffff",
+      correctLevel : QRCode.CorrectLevel.H
+    });

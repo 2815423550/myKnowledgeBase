@@ -1,0 +1,4 @@
+引入css文件，在要加动画效果的标签的class中加入animated后，再加相对于的动画class名，
+
+例如：<div id="waypoint" class="aaa animated fadeIn">  xxx      </div>		
+这里的animated便是加入的动画效果，这个div便就拥有了animated动画效果里的fadeIn效果

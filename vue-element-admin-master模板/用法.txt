@@ -1,0 +1,3 @@
+npm install（如果失败了就多试几次）
+
+npm run dev

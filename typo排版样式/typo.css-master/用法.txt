@@ -1,0 +1,5 @@
+引入css，在我们想更换样式的代码的class里添加所对应的class值，
+
+例如： <div id="content" class="aaa  typo  typo-selection ">xxxx </div>
+这里加入了typo-first，也就运用了typo-first的排版样式，具体改样式是什么样子的，
+可以打开example.html参考

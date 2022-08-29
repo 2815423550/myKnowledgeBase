@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        html {
+            height: 100%
+        }
+
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+        }
+
+        #container {
+            height: 100%
+        }
+    </style>
+    <script type="text/javascript"
+        src="https://api.map.baidu.com/api?v=3.0&ak=9QKrzccmaCZxQnQxHdcHzjp3Wh7HcLrG"></script>
+
+</head>
+
+<body>
+    <div id="container">
+
+    </div>
+
+    <script>
+        var map = new BMap.Map("container");
+
+        map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+        map.addControl(new BMap.NavigationControl());    
+        map.addControl(new BMap.ScaleControl());    
+        map.addControl(new BMap.OverviewMapControl());    
+        map.addControl(new BMap.MapTypeControl());   
+
+        // 创建地址解析器实例     
+        var myGeo = new BMap.Geocoder();
+        // 将地址解析结果显示在地图上，并调整地图视野    
+        myGeo.getPoint("广东省佛山市三水区乐平欣华医院-门诊部", function (point) {
+            if (point) {
+                map.centerAndZoom(point, 19);
+                map.addOverlay(new BMap.Marker(point));
+            }
+        },
+            "");
+
+        //     myGeo.getPoint("广东省佛山市三水区健翔医院", function (point) {
+        //     if (point) {
+        //         map.centerAndZoom(point, 16);
+        //         map.addOverlay(new BMap.Marker(point));
+        //     }
+        // },
+        //     "");
+    </script>
+</body>
+
+</html>

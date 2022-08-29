@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>地区选择插件</title>
+
+
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <script type="text/javascript" src="assets/jquery.min.js"></script>
+
+    <script type="text/javascript" src="src/JAreaData.js"></script>
+    <script type="text/javascript" src="src/JAreaSelect.js"></script>
+    <script type="text/javascript" src="src/JAreaSelect2.js"></script>
+
+    <style type="text/css">
+        .form-control {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container" style="padding-top: 20px;">
+
+    <div id="area-select-box" class="form-inline">
+        
+    </div>
+</div>
+
+</body>
+<script type="text/javascript">
+    
+    var area = $("#area-select-box").JAreaSelect({
+	    prov : 1,
+	    city : 72,
+	    dist : 2839,
+	    level : 3
+    });
+</script>
+</html>
+

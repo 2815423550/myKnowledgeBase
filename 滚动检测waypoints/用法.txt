@@ -1,0 +1,18 @@
+引入两个中的任意一个，
+
+添加script：
+
+//waypoint 你要滚动的元素的id值
+var waypoint = new Waypoint({
+      element: document.getElementById('waypoint'),	
+//下面可以自定义是哪个滚动方向时触发
+      handler: function(direction) {
+        if (direction == 'down') {
+//这里定义了向下滚动时toolbar元素显示，100是时间间隔，100毫秒
+          $('#toolbar').show(100);
+        } else {
+          $('#toolbar').hide(500);
+        }
+        console.log('Scrolled to waypoint!  ' + direction);
+      }
+    })

@@ -1,0 +1,40 @@
+把四个文件都引入，注意：你要生成目录的文件里的每一个h标签都必须要有id值！！！
+
+然后在script里面添加
+
+    tocbot.init({
+      // 生成目录的显示区域，这里是根据class来找
+      tocSelector: '.js-toc',
+      // 所要生成目录的源，也是根据class来寻找
+      contentSelector: '.js-toc-content',
+      // 生成目录的级别
+      headingSelector: 'h1, h2, h3',
+    });
+
+
+建议：不要更改上面的内容，直接复制，然后去到你想生成目录的源的class里面添加js-toc-content就行了，
+生成目录的显示区域做法也是如此
+
+ps：如果最终生成的效果不满意，可以通过style="width: 250px!important;"更改样式，
+
+或者去到typo.css里面添加 :
+ .toc-list{ 
+	list-style-type:none;		//去掉前面的小圆点
+	margin: 0;
+    	padding-left: 10px;
+}
+
+.toc-list li a {
+    display: block;
+    padding: 4px 0;
+    font-weight: 300;
+}
+
+.toc-list li a:hover {
+    color: #00B5AD;
+}
+
+.is-active-link {
+    font-weight: 700;
+    color: #00B5AD !important;
+}
