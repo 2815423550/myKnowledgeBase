@@ -1,0 +1,3 @@
+在CodeGenerator里修改包配置里的pc.setParent里的值
+
+如果再不会就去看https://www.cnblogs.com/smfx1314/p/10849321.html
