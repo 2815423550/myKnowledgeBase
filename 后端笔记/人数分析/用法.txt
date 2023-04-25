@@ -1,0 +1,11 @@
+说明：根据所给的图片，返回图片上的人数。
+
+把上面这四个类复制进去，然后在BodyNum里面修改filePath的值，注意：该图片必须为已经下载在本机的图片，
+其他的都不要改。
+
+还有一点需要注意的是，accessToken可能会失效，他的有效期一般是一个月，如果失效了，
+就去看https://blog.csdn.net/qq_37273544/article/details/104197205这篇文章，
+然后去https://console.bce.baidu.com/ai/#/ai/body/overview/index创建应用并且开通相关服务（很便宜的）
+
+
+扩：如果百度智能云有不错的api你就试着去用一下吧

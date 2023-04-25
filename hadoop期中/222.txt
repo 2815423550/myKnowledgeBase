@@ -1,0 +1,19 @@
+查看安全模式		hdfs dfsadmin -safemode	get
+进入安全模式		enter
+退出			leave
+等待			wait
+
+
+快照
+开启快照			hdfs dfsadmin -allowSnapshot
+禁用快照			-disallowSnapshot
+创建快照			-createSnapshot
+删除快照			-deleteSnapshot
+重命名快照		-renameSnapshot
+
+配额			hdfs dfsadmin -setQuota n
+空间配额			hdfs dfsadmin -setSpaceQuota n
+
+
+报告文件系统的基本信息和统计信息		hdfs dfsadmin -report
+

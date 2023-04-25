@@ -1,0 +1,124 @@
+<!-- 轮播图  -->
+<swiper class="rotation-map" autoplay="true" interval="3000" circular="ture"      indicator-dots="true">
+<!-- 第一项 -->
+<swiper-item>
+<image src="cloud://cloud1-7grstf0dd3ccf448.636c-cloud1-7grstf0dd3ccf448-1309937564/users/空白图片样式.jpg" mode="aspectFill"></image>
+</swiper-item>
+<!-- 第二项 -->
+<swiper-item>
+<image src="cloud://cloud1-7grstf0dd3ccf448.636c-cloud1-7grstf0dd3ccf448-1309937564/users/空白图片样式.jpg"  mode="aspectFill"></image>
+</swiper-item>
+<!-- 第三项 -->
+<swiper-item>
+<image src="cloud://cloud1-7grstf0dd3ccf448.636c-cloud1-7grstf0dd3ccf448-1309937564/users/空白图片样式.jpg"  mode="aspectFill"></image>
+</swiper-item>
+<!-- 第四项 -->
+<swiper-item>
+<image src="cloud://cloud1-7grstf0dd3ccf448.636c-cloud1-7grstf0dd3ccf448-1309937564/users/空白图片样式.jpg"  mode="aspectFill"></image>
+</swiper-item>
+</swiper>
+
+
+
+<!-- 上方导航条 -->
+<view class="pubTitle">
+<view class="txt">
+<text style="color: brown; font-size: 26px; font-weight: 900;">|</text>
+农产品1</view>
+<navigator class="more">更多 ></navigator>
+</view>
+
+<!-- 九宫格 -->
+<view class="wkMain">
+<navigator class="box">
+<image class="pic" src="cloud://cloud1-7grstf0dd3ccf448.636c-cloud1-7grstf0dd3ccf448-1309937564/users/空白图片样式.jpg"></image>
+<view class="ceng">
+<view class="tit">XXXXX</view>
+<view class="line"></view>
+<view class="des">XX XXXX XXXXXXX XXXXXXXXX</view>
+</view>
+</navigator>
+<navigator class="box">
+<image class="pic" src="cloud://cloud1-7grstf0dd3ccf448.636c-cloud1-7grstf0dd3ccf448-1309937564/users/空白图片样式.jpg"></image>
+<view class="ceng">
+<view class="tit">XXXXX</view>
+<view class="line"></view>
+<view class="des">XX XXXX XXXXXXX XXXXXXXXX</view>
+</view>
+</navigator>
+<navigator class="box">
+<image class="pic" src="cloud://cloud1-7grstf0dd3ccf448.636c-cloud1-7grstf0dd3ccf448-1309937564/users/空白图片样式.jpg"></image>
+<view class="ceng">
+<view class="tit">XXXXX</view>
+<view class="line"></view>
+<view class="des">XX XXXX XXXXXXX XXXXXXXXX</view>
+</view>
+</navigator>
+<navigator class="box">
+<image class="pic" src="cloud://cloud1-7grstf0dd3ccf448.636c-cloud1-7grstf0dd3ccf448-1309937564/users/空白图片样式.jpg"></image>
+<view class="ceng">
+<view class="tit">XXXXX</view>
+<view class="line"></view>
+<view class="des">XX XXXX XXXXXXX XXXXXXXXX</view>
+</view>
+</navigator>
+<navigator class="box">
+<image class="pic" src="cloud://cloud1-7grstf0dd3ccf448.636c-cloud1-7grstf0dd3ccf448-1309937564/users/空白图片样式.jpg"></image>
+<view class="ceng">
+<view class="tit">XXXXX</view>
+<view class="line"></view>
+<view class="des">XX XXXX XXXXXXX XXXXXXXXX</view>
+</view>
+</navigator>
+<navigator class="box">
+<image class="pic" src="cloud://cloud1-7grstf0dd3ccf448.636c-cloud1-7grstf0dd3ccf448-1309937564/users/空白图片样式.jpg"></image>
+<view class="ceng">
+<view class="tit">XXXXX</view>
+<view class="line"></view>
+<view class="des">XX XXXX XXXXXXX XXXXXXXXX</view>
+</view>
+</navigator>
+<navigator class="box">
+<image class="pic" src="cloud://cloud1-7grstf0dd3ccf448.636c-cloud1-7grstf0dd3ccf448-1309937564/users/空白图片样式.jpg"></image>
+<view class="ceng">
+<view class="tit">XXXXX</view>
+<view class="line"></view>
+<view class="des">XX XXXX XXXXXXX XXXXXXXXX</view>
+</view>
+</navigator>
+<navigator class="box">
+<image class="pic" src="cloud://cloud1-7grstf0dd3ccf448.636c-cloud1-7grstf0dd3ccf448-1309937564/users/空白图片样式.jpg"></image>
+<view class="ceng">
+<view class="tit">比鸡艾蒙</view>
+<view class="line"></view>
+<view class="des">BGIM BGIM BGIM</view>
+</view>
+</navigator>
+</view>
+
+<!-- 第六部分，html代码与第四部分相同，但css代码有所不同 -->
+<view class="pubTitle-second">
+<view class="txt">
+<text style="color: brown; font-size: 26px; font-weight: 900;">|</text>
+农产品2</view>
+<navigator class="more">更多 ></navigator>
+</view>
+
+<!-- 第七部分《作品的展示》 -->
+<view class="dyMain"> 
+<navigator class="dyItem" wx:for="{{5}}">
+<view class="pic">
+<image src="cloud://cloud1-7grstf0dd3ccf448.636c-cloud1-7grstf0dd3ccf448-1309937564/users/空白图片样式.jpg">
+</image>
+</view>
+<view class="txt">
+<view class="title">
+这里是标题的部分</view>
+<view class="info">
+<text>简介:</text>XX产品<text space="ensp">  -  </text><text>时间:</text>2022-11-5 
+</view>
+</view>
+</navigator>
+</view>
+
+

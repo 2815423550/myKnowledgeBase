@@ -1,0 +1,34 @@
+创建目录/xxx	mkdir
+
+列出/xxx下的文件和目录	ls
+
+上传文件（两种方法）	put	moveFromLocal
+
+移动文件		moveFromLocal
+
+重命名文件	mv
+
+下载文件（两种方法）	get	copyToLocal
+
+查看文件（两种方法）	cat	tail
+
+删除文件		rm
+
+复制文件		get	copyToLocal		!!!!
+
+创建空文件	touchz
+
+将文件追加到/xxx末尾	appendToFile
+
+文件合并		merge
+
+文件合并再下载		getmerge
+
+统计文件		count 
+
+查看文件大小	du
+
+
+
+
+ 

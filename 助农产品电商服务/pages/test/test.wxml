@@ -1,0 +1,22 @@
+<view class="pubTitle">
+<view class="txt">
+<text style="color: brown; font-size: 26px; font-weight: 900;">|</text>
+农产品1</view>
+<navigator class="more">更多 ></navigator>
+</view>
+
+<view class="dyMain"> 
+<navigator class="dyItem" wx:for="{{5}}">
+<view class="pic">
+<image src="">
+</image>
+</view>
+<view class="txt">
+<view class="title">
+这里是标题的部分这里是标题的部分这里是题的部分</view>
+<view class="info">
+<text>作者:</text>王进<text space="ensp">  -  </text><text>时间:</text>2020-05-01 
+</view>
+</view>
+</navigator>
+</view>

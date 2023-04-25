@@ -1,0 +1,59 @@
+.pubTitle{
+  display: flex;
+  justify-content: space-between;
+  background-color: #275ab1;
+}
+.pubTitle .more{
+  font-size: 28rpx;
+}
+.pubTitle .txt{
+  font-size: 18px;
+  margin-top: -10px;
+}
+
+
+
+.dyItem {
+  display: flex;
+  padding: 15rpx o;
+  border: 1rpx dashed #f4f4f4;
+  justify-content: space-between;
+}
+
+.dyItem .pic {
+  margin-bottom: 10px;
+}
+
+.dyItem .pic image {
+  width: 296rpx;
+  height: 190rpx;
+}
+
+.dyItem .txt {
+  width: 440rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.dyItem .title {
+  font-size: 34rpx;
+  margin-top: -1px;
+  margin-left: 4px;
+}
+
+.dyItem .info {
+  font-size: 26rpx;
+  color: #888;
+  margin-bottom: 6px
+}
+
+.dyItem .info text {
+  font-size: 22rpx;
+  margin-left: 4px;
+}
+
+.dyMain {
+  padding: 0rpx 8px 70rpx;
+}
